@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/addproduct.css">
+    <title>Add Product Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Products</h1>
+      <p class="feature-title">Add Products</p>
+      <button class="btn-logout">Logout</button>
+    </header>
+
+    <div class="container">
+        <h3 class="form-title">Add new product</h3>
+        <form class="form-add-product">
+            <span>
+                <label>Product Name</label>
+                <input type="text" name="name"/>
+            </span>
+    
+            <span>
+                <label>Unit Price</label>
+                <input type="text" name="price"/>
+            </span>
+    
+            <span>
+                <label>Units in stock</label>
+                <input type="number" name="name"/>
+            </span>
+
+            <span>
+                <label style="vertical-align: top;">Description</label>
+                <textarea name="description"></textarea>
+            </span>
+
+            <span>
+                <label>Manufactor</label>
+                <input type="text" name="manufactor"/>
+            </span>
+
+            <span>
+                <label>Category</label>
+                <input type="text" name="category"/>
+            </span>
+
+            <span class="radio-box">
+                <label>Condition</label>
+                <input type="radio" name="condition"/> <span class="radio-label">New</span>
+                <input type="radio" name="condition"/> <span class="radio-label">Old</span>
+                <input type="radio" name="condition"/> <span class="radio-label">Refurbished</span>
+            </span>
+
+            <span>
+                <label>Product Image File</label>
+                <input type="file" name="image"/>
+            </span>
+
+            <button type="submit" class="btn-add-product">Add Product</button>
+        </form>
+    </div>
+  </body>
+</html>

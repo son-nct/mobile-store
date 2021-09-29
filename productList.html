@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List Page</title>
+    <link rel="stylesheet" href="css/productList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Products</h1>
+      <p class="feature-title">All available products in our store</p>
+      <button class="btn-viewcart">
+        <i
+          class="fa fa-shopping-cart fa-flip-horizontal"
+          aria-hidden="true"
+        ></i>
+        <span class="viewcart-label">view cart</span>
+      </button>
+    </header>
+
+    <div class="container">
+      <!-- <div class="card">
+          <h3 class="card-title">P20 Pro 128GB Dual SIM Twilight</h3>
+
+          <img
+            alt="phone image"
+            src="data:image/jpeg;base64,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"
+          />
+
+          <p class="product-description">
+            A smartphone is a handheld personal computer with a mobile operating
+            system and an integrated mobile broadband cellular network
+            connection for voice, SMS, and Internet data communication; most if
+            not all smartphones also support Wi-Fi.
+          </p>
+
+          <p class="product-price">899 USD</p>
+
+          <p class="product-stock">600 units in stock</p>
+
+        <span class="btn-control">
+          <button class="btn btn-details">
+            <i class="fa fa-info-circle" aria-hidden="true"></i> Details
+          </button>
+          <button class="btn btn-order">
+            <i
+              class="fa fa-shopping-cart fa-flip-horizontal"
+              aria-hidden="true"
+            ></i>
+            Order Now
+          </button>
+        </span>
+      </div> -->
+
+
+      <script type="text/javascript" src="./js/productList.js"></script>
+
+    </div>
+  </body>
+</html>

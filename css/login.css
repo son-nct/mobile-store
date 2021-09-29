@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    padding: 40px;
+    background-color: #EEEEEE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #333333;
+    cursor: default;
+}
+
+.form-login {
+    width: 450px;
+    height: 250px;
+    border: 1px solid #d3d0d0;
+    margin: 2% auto;
+}
+
+.title-login {
+    padding: 8px;
+    background-color: #F5F5F5;
+    color: #333333;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+
+input {
+    display: block;
+    width: 88%;
+    padding: 8px;
+    border-color: #cecccc;
+    border-radius: 5px;
+    margin: 4%;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+input::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-weight: 400;
+}
+
+
+.btn-login {
+    padding: 10px;
+    width: 93%;
+    background-color: #5CB85C;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 2% 6% 0 4%;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    background-color: #47be47;
+    transition: .3s;
+}
