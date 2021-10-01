@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #E2E2E2;
+}
+
+.title {
+  
+    font-weight: 400;
+    color: #4A4A4A;
+    cursor: default;
+    font-size: 3rem;
+    padding: 2% 0 0 5%;
+}
+
+.container {
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-container {
+    width: 30%;
+}
+
+.detail-container {
+    width: 60%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+span {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.product-name {
+    color: #333333;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+label {
+    color: #4E5050;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+.box {
+    display: flex;
+}
+
+.item-code {
+    display: inline-block;
+    background-color: #F0AD4E;
+    color: #fff;
+    border-radius: 4px;
+    height: 20px;
+    padding: 4px;
+    text-align: left;
+}
+
+.category {
+    color: #7097da;
+    font-weight: 500;
+}
+
+.stock {
+    margin-left: 5px;
+}
+
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-back {
+    background-color: #5CB85C;
+}
+
+
+.btn-back:hover {
+    background-color: #3bc03b;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-order {
+    background-color: #EFA741;
+}
+
+.btn-order:hover {
+    background-color: #ec9c2c;
+    cursor: pointer;
+    transition: .3s;
+}

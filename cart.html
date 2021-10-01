@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Cart</h1>
+      <p class="feature-title">All selected products in your cart</p>
+    </header>
+
+    <div class="container">
+      <span class="btn-control">
+        <button class="btn btn-clear">
+          <i class="fa fa-times-circle" aria-hidden="true"></i> Clear Cart
+        </button>
+
+        <button class="btn btn-checkout">
+          <i
+            class="fa fa-shopping-cart fa-flip-horizontal"
+            aria-hidden="true"
+          ></i>
+          Checkout
+        </button>
+      </span>
+
+      <table border="1" cellspacing="1" cellpadding="2">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iphone X</td>
+            <td>1</td>
+            <td>Unit price</td>
+            <td>Price</td>
+            <td>
+              <button class="btn btn-remove"> <i class="fa fa-times-circle" aria-hidden="true"></i> remove</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Iphone X</td>
+            <td>1</td>
+            <td>Unit price</td>
+            <td>Price</td>
+            <td>
+              <button class="btn btn-remove"> <i class="fa fa-times-circle" aria-hidden="true"></i> remove</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Iphone X</td>
+            <td>1</td>
+            <td>Unit price</td>
+            <td>Price</td>
+            <td>
+              <button class="btn btn-remove"> <i class="fa fa-times-circle" aria-hidden="true"></i> remove</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="btn btn-continue"><i class="fa fa-arrow-left" aria-hidden="true"></i> continue shopping</button>
+    </div>
+  </body>
+</html>

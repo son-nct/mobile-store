@@ -1,6 +1,37 @@
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-40%);
+  }
+  
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+  
+  .loading-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 0.5em;
+  }
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    overflow: scroll;
 }
 
 header {
@@ -116,4 +147,37 @@ label {
     background-color: #3587ce;
     cursor: pointer;
     transition: .3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: red;
+}
+
+.dot1 {
+    background-color:#1abc9c;
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+
+.dot2 {
+    background-color:#ffd64a;
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+
+.dot3 {
+    background-color:#e067af;
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@keyframes jump-up {
+    50% {
+        transform: translate(0,15px);
+    }
 }
